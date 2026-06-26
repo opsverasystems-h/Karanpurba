@@ -92,7 +92,7 @@ export function Hero() {
             <span className="text-4xl text-ink-500">◆</span>
             <span className="text-sm text-bone-dim">Pro photo of Karan</span>
             <span className="absolute bottom-4 right-4 rounded-full border border-gold-400/40 bg-ink-900/70 px-3 py-1 text-xs text-gold-200">
-              Toronto, Canada
+              Vancouver, Canada
             </span>
           </div>
         </motion.div>
