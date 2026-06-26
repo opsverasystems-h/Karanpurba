@@ -26,34 +26,49 @@ export function Nav() {
       }`}
     >
       <div className="container-site flex h-16 items-center justify-between md:h-20">
-        <a
-          href="#top"
-          className="flex font-display text-base font-bold tracking-[0.18em] text-bone"
-          aria-label="Karan Purba"
-        >
-          <motion.span
-            initial={{ x: -48, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.1, ease }}
+        <div className="flex items-center gap-2.5 md:gap-3.5">
+          <a
+            href="#top"
+            className="flex font-display text-base font-bold tracking-[0.18em] text-bone"
+            aria-label="Karan Purba"
           >
-            KARAN
-          </motion.span>
-          <motion.span
-            className="text-gold-400"
-            initial={{ scale: 0, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ delay: 0.6, duration: 0.4, ease }}
-          >
-            .
-          </motion.span>
-          <motion.span
-            initial={{ x: 48, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.22, ease }}
-          >
-            PURBA
-          </motion.span>
-        </a>
+            <motion.span
+              initial={{ x: -48, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.1, ease }}
+            >
+              KARAN
+            </motion.span>
+            <motion.span
+              className="text-gold-400"
+              initial={{ scale: 0, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ delay: 0.6, duration: 0.4, ease }}
+            >
+              .
+            </motion.span>
+            <motion.span
+              initial={{ x: 48, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.22, ease }}
+            >
+              PURBA
+            </motion.span>
+          </a>
+          <motion.img
+            src="/signature.png"
+            alt="Karan Purba signature"
+            aria-hidden
+            draggable={false}
+            onError={(e) => {
+              e.currentTarget.style.display = "none";
+            }}
+            className="h-7 w-auto select-none object-contain opacity-90 md:h-8"
+            initial={{ opacity: 0, x: -10 }}
+            animate={{ opacity: 0.9, x: 0 }}
+            transition={{ delay: 1, duration: 0.7, ease }}
+          />
+        </div>
 
         <nav className="hidden items-center gap-8 md:flex">
           {nav.map((item) => (
