@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { stats } from "@/lib/content";
+import { CountUp } from "./CountUp";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -109,7 +110,7 @@ export function Hero() {
             <div key={s.label}>
               <div className="font-display text-3xl font-bold text-gold-400 md:text-4xl">
                 {s.star && <span className="mr-1">★</span>}
-                {s.value}
+                <CountUp value={s.value} />
               </div>
               <div className="mt-1 text-sm text-bone-muted">{s.label}</div>
             </div>

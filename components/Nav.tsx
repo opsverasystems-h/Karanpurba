@@ -1,7 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { nav } from "@/lib/content";
+
+const ease = [0.22, 1, 0.36, 1] as const;
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -25,9 +28,31 @@ export function Nav() {
       <div className="container-site flex h-16 items-center justify-between md:h-20">
         <a
           href="#top"
-          className="font-display text-base font-bold tracking-[0.18em] text-bone"
+          className="flex font-display text-base font-bold tracking-[0.18em] text-bone"
+          aria-label="Karan Purba"
         >
-          KARAN<span className="text-gold-400">.</span>PURBA
+          <motion.span
+            initial={{ x: -48, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.1, ease }}
+          >
+            KARAN
+          </motion.span>
+          <motion.span
+            className="text-gold-400"
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ delay: 0.6, duration: 0.4, ease }}
+          >
+            .
+          </motion.span>
+          <motion.span
+            initial={{ x: 48, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.22, ease }}
+          >
+            PURBA
+          </motion.span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
