@@ -22,7 +22,7 @@ export function StickyCTA() {
       }`}
     >
       <a
-        href="#contact"
+        href="#book"
         className="btn-gold w-full max-w-md shadow-[0_8px_30px_-6px_rgba(0,0,0,0.7)]"
       >
         Book a free call <span aria-hidden>→</span>

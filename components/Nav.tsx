@@ -43,7 +43,7 @@ export function Nav() {
         </nav>
 
         <div className="hidden md:block">
-          <a href="#contact" className="btn-gold !py-2.5 !px-5">
+          <a href="#book" className="btn-gold !py-2.5 !px-5">
             Book a call
           </a>
         </div>
@@ -71,7 +71,7 @@ export function Nav() {
               </a>
             ))}
             <a
-              href="#contact"
+              href="#book"
               onClick={() => setOpen(false)}
               className="btn-gold mt-2"
             >

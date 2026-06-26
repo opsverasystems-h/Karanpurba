@@ -7,6 +7,17 @@ export const brand = {
   email: "hello@karanpurba.com",
 };
 
+// Appointment booking. Paste your scheduling page URL into `url` to go live.
+// Recommended: Google Calendar "Appointment schedule" — free, and bookings land
+// straight in your Google Calendar (calendar.google.com -> Create -> Appointment
+// schedule -> ... -> "Share" -> copy the booking page link).
+// Also works as-is with Cal.com or Calendly (paste their booking link instead).
+// Leave `url` empty to show a "booking opens soon" placeholder with an email fallback.
+export const booking = {
+  url: "",
+  provider: "Google Calendar",
+};
+
 export const stats = [
   { value: "5+", label: "Years experience" },
   { value: "200+", label: "Advisors mentored" },

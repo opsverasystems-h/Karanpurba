@@ -1,6 +1,5 @@
 "use client";
 
-import { brand } from "@/lib/content";
 import { Reveal } from "./Reveal";
 
 export function FinalCTA() {
@@ -24,7 +23,7 @@ export function FinalCTA() {
             whether you&apos;re planning or building.
           </p>
           <div className="relative mt-8 flex flex-wrap justify-center gap-3">
-            <a href={`mailto:${brand.email}`} className="btn-gold">
+            <a href="#book" className="btn-gold">
               Book a call <span aria-hidden>→</span>
             </a>
             <a href="#offers" className="btn-ghost">

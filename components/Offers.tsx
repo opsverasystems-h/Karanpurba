@@ -41,7 +41,7 @@ export function Offers() {
                   ))}
                 </ul>
                 <a
-                  href="#contact"
+                  href="#book"
                   className={`mt-8 ${o.featured ? "btn-gold" : "btn-ghost"}`}
                 >
                   {o.cta}

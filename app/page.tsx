@@ -5,6 +5,7 @@ import { TwoDoors } from "@/components/TwoDoors";
 import { Story } from "@/components/Story";
 import { ProofWall } from "@/components/ProofWall";
 import { Offers } from "@/components/Offers";
+import { Booking } from "@/components/Booking";
 import { FinalCTA } from "@/components/FinalCTA";
 import { Footer } from "@/components/Footer";
 import { StickyCTA } from "@/components/StickyCTA";
@@ -19,6 +20,7 @@ export default function Home() {
       <Story />
       <ProofWall />
       <Offers />
+      <Booking />
       <FinalCTA />
       <Footer />
       <StickyCTA />
