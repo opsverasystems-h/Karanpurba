@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --gold: #d4af37;
+  --gold: #c6a23c;
 }
 
 * {
@@ -16,29 +16,28 @@ html {
 }
 
 body {
-  background-color: #0a0a0b;
-  color: #f5f3ec;
+  background-color: #f5f1e8;
+  color: #1c1a16;
   overflow-x: hidden;
 }
 
 ::selection {
-  background: rgba(212, 175, 55, 0.3);
-  color: #fff;
+  background: rgba(198, 162, 60, 0.28);
+  color: #1c1a16;
 }
 
-/* Thin custom scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #0a0a0b;
+  background: #efe9db;
 }
 ::-webkit-scrollbar-thumb {
-  background: #26262a;
+  background: #d3cab5;
   border-radius: 8px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #3a3a3f;
+  background: #c6a23c;
 }
 
 @layer components {
@@ -47,38 +46,23 @@ body {
   }
 
   .gold-text {
-    background: linear-gradient(
-      100deg,
-      #a87f20 0%,
-      #f4e3a8 25%,
-      #d4af37 50%,
-      #f4e3a8 75%,
-      #a87f20 100%
-    );
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    @apply animate-shimmer;
-  }
-
-  .hairline {
-    @apply border-ink-500/70;
+    @apply italic text-gold-600;
+    font-family: var(--font-display);
   }
 
   .eyebrow {
-    @apply text-xs font-medium uppercase tracking-[0.25em] text-gold-400;
+    @apply text-xs font-medium uppercase tracking-[0.28em] text-gold-600;
   }
 
   .btn-gold {
-    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gold-400 px-6 py-3.5 text-sm font-semibold text-ink-900 transition-all duration-200 hover:bg-gold-300 hover:shadow-[0_0_30px_-8px_rgba(212,175,55,0.6)] active:scale-[0.98];
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-ink px-6 py-3.5 text-sm font-medium text-paper transition-all duration-200 hover:bg-ink/90 active:scale-[0.98];
   }
 
   .btn-ghost {
-    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-ink-500 bg-transparent px-6 py-3.5 text-sm font-semibold text-bone transition-all duration-200 hover:border-gold-400/60 hover:text-gold-200 active:scale-[0.98];
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-ink/25 bg-transparent px-6 py-3.5 text-sm font-medium text-ink transition-all duration-200 hover:border-ink/50 active:scale-[0.98];
   }
 
   .card {
-    @apply rounded-2xl border border-ink-500/80 bg-ink-700/60 backdrop-blur-sm;
+    @apply rounded-2xl border border-line bg-paper-card;
   }
 }

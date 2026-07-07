@@ -21,7 +21,7 @@ export function Nav() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "border-b border-ink-500/70 bg-ink-900/85 backdrop-blur-md"
+          ? "border-b border-line bg-paper/85 backdrop-blur-md"
           : "border-b border-transparent bg-transparent"
       }`}
     >
@@ -29,7 +29,7 @@ export function Nav() {
         <div className="flex items-center gap-2.5 md:gap-3.5">
           <a
             href="#top"
-            className="flex font-display text-base font-bold tracking-[0.18em] text-bone"
+            className="flex font-display text-base font-medium tracking-[0.16em] text-ink"
             aria-label="Karan Purba"
           >
             <motion.span
@@ -40,7 +40,7 @@ export function Nav() {
               KARAN
             </motion.span>
             <motion.span
-              className="text-gold-400"
+              className="text-gold-600"
               initial={{ scale: 0, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.6, duration: 0.4, ease }}
@@ -63,9 +63,9 @@ export function Nav() {
             onError={(e) => {
               e.currentTarget.style.display = "none";
             }}
-            className="h-7 w-auto select-none object-contain opacity-90 md:h-8"
+            className="h-7 w-auto select-none object-contain opacity-80 md:h-8"
             initial={{ opacity: 0, x: -10 }}
-            animate={{ opacity: 0.9, x: 0 }}
+            animate={{ opacity: 0.8, x: 0 }}
             transition={{ delay: 1, duration: 0.7, ease }}
           />
         </div>
@@ -75,7 +75,7 @@ export function Nav() {
             <a
               key={item.label}
               href={item.href}
-              className="text-sm text-bone-muted transition-colors hover:text-bone"
+              className="text-sm text-ink-soft transition-colors hover:text-ink"
             >
               {item.label}
             </a>
@@ -91,30 +91,26 @@ export function Nav() {
         <button
           aria-label="Toggle menu"
           onClick={() => setOpen((o) => !o)}
-          className="flex h-10 w-10 items-center justify-center rounded-lg border border-ink-500 text-bone md:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-lg border border-line-strong text-ink md:hidden"
         >
           <span className="text-lg">{open ? "✕" : "☰"}</span>
         </button>
       </div>
 
       {open && (
-        <div className="border-t border-ink-500/70 bg-ink-900/95 px-6 py-4 md:hidden">
+        <div className="border-t border-line bg-paper/95 px-6 py-4 backdrop-blur-md md:hidden">
           <div className="flex flex-col gap-4">
             {nav.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="text-sm text-bone-muted"
+                className="text-sm text-ink-soft"
               >
                 {item.label}
               </a>
             ))}
-            <a
-              href="#book"
-              onClick={() => setOpen(false)}
-              className="btn-gold mt-2"
-            >
+            <a href="#book" onClick={() => setOpen(false)} className="btn-gold mt-2">
               Book a call
             </a>
           </div>

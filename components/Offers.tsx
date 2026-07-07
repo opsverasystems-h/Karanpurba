@@ -5,11 +5,14 @@ import { Reveal } from "./Reveal";
 
 export function Offers() {
   return (
-    <section id="offers" className="relative border-t border-ink-500/60 bg-ink-800/30 py-20 md:py-28">
+    <section
+      id="offers"
+      className="relative border-t border-line bg-paper-band py-20 md:py-28"
+    >
       <div className="container-site">
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="eyebrow">Work with Karan</p>
-          <h2 className="mt-4 font-display text-3xl font-bold leading-tight text-bone md:text-5xl">
+          <h2 className="mt-4 font-display text-3xl font-semibold leading-tight text-ink md:text-5xl">
             Ways to work together
           </h2>
         </Reveal>
@@ -18,24 +21,26 @@ export function Offers() {
           {offers.map((o, i) => (
             <Reveal key={o.name} delay={i * 0.08}>
               <div
-                className={`relative flex h-full flex-col rounded-3xl p-8 transition-all duration-300 ${
+                className={`relative flex h-full flex-col rounded-3xl bg-paper-card p-8 transition-all duration-300 ${
                   o.featured
-                    ? "border-2 border-gold-400/70 bg-ink-700/70"
-                    : "border border-ink-500/80 bg-ink-700/40 hover:border-gold-400/40"
+                    ? "border-2 border-gold-500 shadow-[0_24px_60px_-34px_rgba(28,26,22,0.4)]"
+                    : "border border-line hover:border-gold-400/60"
                 }`}
               >
                 {o.featured && (
-                  <span className="absolute -top-3 left-8 rounded-full bg-gold-400 px-3 py-1 text-xs font-semibold text-ink-900">
+                  <span className="absolute -top-3 left-8 rounded-full bg-gold-400 px-3 py-1 text-xs font-medium text-ink">
                     Most popular
                   </span>
                 )}
-                <h3 className="font-display text-xl font-bold text-bone">{o.name}</h3>
-                <div className="mt-1 text-sm text-gold-400">{o.price}</div>
-                <p className="mt-4 text-sm text-bone-muted">{o.desc}</p>
+                <h3 className="font-display text-xl font-semibold text-ink">
+                  {o.name}
+                </h3>
+                <div className="mt-1 text-sm text-gold-600">{o.price}</div>
+                <p className="mt-4 text-sm text-ink-soft">{o.desc}</p>
                 <ul className="mt-6 flex-1 space-y-3">
                   {o.features.map((f) => (
-                    <li key={f} className="flex items-center gap-3 text-sm text-bone">
-                      <span className="text-gold-400">✓</span>
+                    <li key={f} className="flex items-center gap-3 text-sm text-ink">
+                      <span className="text-gold-600">✓</span>
                       {f}
                     </li>
                   ))}

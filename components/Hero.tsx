@@ -9,28 +9,17 @@ const ease = [0.22, 1, 0.36, 1] as const;
 export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden pt-28 md:pt-36">
-      {/* Ambient gold glow */}
+      {/* warm ambient glow */}
       <div
         aria-hidden
-        className="pointer-events-none absolute -top-40 left-1/2 h-[520px] w-[820px] -translate-x-1/2 rounded-full opacity-[0.18] blur-[120px]"
+        className="pointer-events-none absolute -top-40 right-0 h-[520px] w-[720px] rounded-full opacity-[0.5] blur-[120px]"
         style={{
           background:
-            "radial-gradient(closest-side, #d4af37, transparent 70%)",
-        }}
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-[0.04]"
-        style={{
-          backgroundImage:
-            "linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)",
-          backgroundSize: "64px 64px",
-          maskImage:
-            "radial-gradient(ellipse at top, black, transparent 70%)",
+            "radial-gradient(closest-side, rgba(198,162,60,0.22), transparent 70%)",
         }}
       />
 
-      <div className="container-site relative grid items-center gap-12 pb-16 md:grid-cols-[1.15fr_0.85fr] md:pb-24">
+      <div className="container-site relative grid items-center gap-12 pb-16 md:grid-cols-[1.1fr_0.9fr] md:pb-24">
         <div>
           <motion.p
             className="eyebrow"
@@ -42,20 +31,19 @@ export function Hero() {
           </motion.p>
 
           <motion.h1
-            className="mt-5 font-display text-[2.6rem] font-extrabold leading-[1.04] tracking-tight text-bone sm:text-6xl lg:text-7xl"
+            className="mt-5 font-display text-[2.7rem] font-semibold leading-[1.02] tracking-[-0.01em] text-ink sm:text-6xl lg:text-[4.4rem]"
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.08, ease }}
           >
             Build real wealth —
             <br />
-            without the
-            <br />
-            <span className="gold-text">sales pitch.</span>
+            without the{" "}
+            <span className="gold-text font-normal">sales pitch.</span>
           </motion.h1>
 
           <motion.p
-            className="mt-6 max-w-md text-lg leading-relaxed text-bone-muted"
+            className="mt-6 max-w-md text-lg leading-relaxed text-ink-soft"
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.16, ease }}
@@ -87,15 +75,14 @@ export function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, delay: 0.2, ease }}
         >
-          <div className="absolute -inset-3 rounded-[28px] border border-gold-400/30" />
-          <div className="relative aspect-[3/4] overflow-hidden rounded-3xl border border-ink-500 bg-ink-800">
+          <div className="absolute -inset-3 rounded-[28px] border border-gold-400/40" />
+          <div className="relative aspect-[3/4] overflow-hidden rounded-3xl border border-line bg-paper-deep">
             <img
               src="/photos/karan-hero.webp"
               alt="Karan Purba, Financial Consultant & Coach"
               className="absolute inset-0 h-full w-full object-cover object-top"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-ink-900/70 via-transparent to-transparent" />
-            <span className="absolute bottom-4 right-4 rounded-full border border-gold-400/40 bg-ink-900/70 px-3 py-1 text-xs text-gold-200 backdrop-blur-sm">
+            <span className="absolute bottom-4 right-4 rounded-full border border-line bg-paper/85 px-3 py-1 text-xs text-ink backdrop-blur-sm">
               Vancouver, Canada
             </span>
           </div>
@@ -109,14 +96,14 @@ export function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.32, ease }}
       >
-        <div className="grid grid-cols-2 gap-3 border-t border-ink-500/70 pt-8 md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-3 border-t border-line pt-8 md:grid-cols-4">
           {stats.map((s) => (
             <div key={s.label}>
-              <div className="font-display text-3xl font-bold text-gold-400 md:text-4xl">
-                {s.star && <span className="mr-1">★</span>}
+              <div className="font-display text-3xl font-semibold text-ink md:text-4xl">
+                {s.star && <span className="mr-1 text-gold-500">★</span>}
                 <CountUp value={s.value} />
               </div>
-              <div className="mt-1 text-sm text-bone-muted">{s.label}</div>
+              <div className="mt-1 text-sm text-ink-mute">{s.label}</div>
             </div>
           ))}
         </div>
