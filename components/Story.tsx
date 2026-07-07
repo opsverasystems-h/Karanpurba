@@ -6,7 +6,7 @@ import { Reveal } from "./Reveal";
 export function Story() {
   return (
     <section
-      id="story"
+      id="about"
       className="relative border-y border-line bg-paper-band py-20 md:py-28"
     >
       <div className="container-site grid gap-12 md:grid-cols-[0.85fr_1.15fr] md:items-center">

@@ -4,6 +4,7 @@ import { SocialProof } from "@/components/SocialProof";
 import { TwoDoors } from "@/components/TwoDoors";
 import { Story } from "@/components/Story";
 import { ProofWall } from "@/components/ProofWall";
+import { VideoTestimonials } from "@/components/VideoTestimonials";
 import { Offers } from "@/components/Offers";
 import { Booking } from "@/components/Booking";
 import { FinalCTA } from "@/components/FinalCTA";
@@ -19,6 +20,7 @@ export default function Home() {
       <TwoDoors />
       <Story />
       <ProofWall />
+      <VideoTestimonials />
       <Offers />
       <Booking />
       <FinalCTA />

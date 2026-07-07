@@ -62,14 +62,15 @@ export const doors = [
   },
 ];
 
+// Karan's own story — written in FIRST PERSON (this is his personal site).
 export const story = {
-  eyebrow: "The story",
+  eyebrow: "About me",
   heading: "From a new immigrant to mentoring an industry.",
   body: [
-    "Nine years ago, Karan landed in Canada with an accounting background and a simple observation: almost no one was taught how money actually works.",
-    "So he built a different kind of practice — one that leads with education instead of pressure. Today that philosophy has guided 3,000+ families and trained a new generation of 200+ advisors who do business the right way.",
+    "Nine years ago I landed in Canada with an accounting background and one simple realization: almost no one is ever taught how money actually works.",
+    "So I built a different kind of practice — one that leads with education instead of pressure. Today that approach has guided 3,000+ families and helped train a new generation of 200+ advisors who do this business the right way.",
   ],
-  pull: "No high-pressure pitch. Just pure, structured education.",
+  pull: "No high-pressure pitch. Just honest, structured education.",
 };
 
 export const offers = [
@@ -121,8 +122,24 @@ export const testimonials = [
 ];
 
 export const nav = [
-  { label: "Story", href: "#story" },
+  { label: "About", href: "#about" },
   { label: "Coaching", href: "#offers" },
-  { label: "Wealth Academy", href: "#offers" },
+  { label: "Testimonials", href: "#testimonials" },
   { label: "Plan your future", href: "#doors" },
+];
+
+// Video testimonials. Two ways to add each one (see public/videos/README):
+//   1. YouTube/Vimeo (recommended — no repo bloat): { name, role, youtube: "VIDEO_ID" }
+//      or { name, role, vimeo: "VIMEO_ID" }
+//   2. Self-hosted small mp4 in public/videos: { name, role, src: "/videos/x.mp4", poster: "/videos/x.jpg" }
+// Leave this array empty to show an "add your videos" placeholder.
+export const videoTestimonials: {
+  name: string;
+  role: string;
+  youtube?: string;
+  vimeo?: string;
+  src?: string;
+  poster?: string;
+}[] = [
+  // Example: { name: "A. Advisor", role: "Mentored to a full practice", youtube: "dQw4w9WgXcQ" },
 ];
