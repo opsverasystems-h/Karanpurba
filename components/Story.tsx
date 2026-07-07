@@ -10,9 +10,13 @@ export function Story() {
         <Reveal>
           <div className="relative mx-auto w-full max-w-sm">
             <div className="absolute -inset-3 rounded-[28px] border border-gold-400/25" />
-            <div className="relative flex aspect-[4/5] flex-col items-center justify-center gap-3 overflow-hidden rounded-3xl border border-ink-500 bg-gradient-to-b from-ink-700 to-ink-900">
-              <span className="text-3xl text-ink-500">▶</span>
-              <span className="text-sm text-bone-dim">Story / speaking clip</span>
+            <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-ink-500 bg-ink-800">
+              <img
+                src="/photos/karan-speaking.webp"
+                alt="Karan Purba speaking at an event"
+                className="absolute inset-0 h-full w-full object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink-900/60 via-transparent to-transparent" />
             </div>
           </div>
         </Reveal>

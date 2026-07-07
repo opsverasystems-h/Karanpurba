@@ -102,15 +102,15 @@ export const offers = [
 export const testimonials = [
   {
     quote:
-      "No high-pressure sales pitch — just pure, structured education. I finally understand my own money.",
-    name: "Client review",
-    detail: "Google review · ★★★★★",
+      "He helped me see that my story as a newcomer wasn't something to hide — it was exactly why people would connect with me. That shift changed everything.",
+    name: "Mentored advisor",
+    detail: "New to Canada · Build Your Business",
   },
   {
     quote:
-      "Karan's mentorship took me from zero to a real practice in months. The 60-day plan is gold.",
-    name: "Mentored advisor",
-    detail: "Build Your Business",
+      "No high-pressure sales pitch — just pure, structured education. I finally understand my own money.",
+    name: "Client review",
+    detail: "Google review · ★★★★★",
   },
   {
     quote:

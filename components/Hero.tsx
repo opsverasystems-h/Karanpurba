@@ -88,10 +88,14 @@ export function Hero() {
           transition={{ duration: 0.9, delay: 0.2, ease }}
         >
           <div className="absolute -inset-3 rounded-[28px] border border-gold-400/30" />
-          <div className="relative flex aspect-[3/4] flex-col items-center justify-center gap-3 overflow-hidden rounded-3xl border border-ink-500 bg-gradient-to-b from-ink-700 to-ink-900">
-            <span className="text-4xl text-ink-500">◆</span>
-            <span className="text-sm text-bone-dim">Pro photo of Karan</span>
-            <span className="absolute bottom-4 right-4 rounded-full border border-gold-400/40 bg-ink-900/70 px-3 py-1 text-xs text-gold-200">
+          <div className="relative aspect-[3/4] overflow-hidden rounded-3xl border border-ink-500 bg-ink-800">
+            <img
+              src="/photos/karan-hero.webp"
+              alt="Karan Purba, Financial Consultant & Coach"
+              className="absolute inset-0 h-full w-full object-cover object-top"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-ink-900/70 via-transparent to-transparent" />
+            <span className="absolute bottom-4 right-4 rounded-full border border-gold-400/40 bg-ink-900/70 px-3 py-1 text-xs text-gold-200 backdrop-blur-sm">
               Vancouver, Canada
             </span>
           </div>
