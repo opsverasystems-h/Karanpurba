@@ -1,0 +1,8 @@
+name = "karanpurba"
+compatibility_date = "2024-11-01"
+
+# Static site: no Worker script, just serve the exported files in ./out.
+# Build (`npm run build`) produces ./out, then `npx wrangler deploy` uploads it.
+[assets]
+directory = "./out"
+not_found_handling = "404-page"
