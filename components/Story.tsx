@@ -39,7 +39,7 @@ export function Story() {
           </blockquote>
 
           <div className="mt-8 flex flex-col gap-1">
-            <Signature className="h-16 w-auto opacity-90" duration={2100} delay={250} />
+            <Signature className="h-16 w-auto opacity-90" duration={2800} delay={150} />
             <span className="text-xs uppercase tracking-[0.2em] text-ink-mute">
               Karan Purba
             </span>

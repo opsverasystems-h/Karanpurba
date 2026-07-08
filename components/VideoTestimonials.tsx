@@ -8,9 +8,12 @@ function VideoCard({
 }: {
   item: (typeof videoTestimonials)[number];
 }) {
+  const portrait = Boolean(item.src && !item.youtube && !item.vimeo);
   return (
     <figure className="overflow-hidden rounded-3xl border border-line bg-paper-card">
-      <div className="relative aspect-video bg-paper-deep">
+      <div
+        className={`relative bg-paper-deep ${portrait ? "aspect-[9/16]" : "aspect-video"}`}
+      >
         {item.youtube ? (
           <iframe
             className="absolute inset-0 h-full w-full"

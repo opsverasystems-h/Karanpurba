@@ -141,7 +141,9 @@ export const videoTestimonials: {
   src?: string;
   poster?: string;
 }[] = [
-  // Example: { name: "A. Advisor", role: "Mentored to a full practice", youtube: "dQw4w9WgXcQ" },
+  { name: "Prabhjit", role: "Client testimonial", src: "/videos/prabhjit.mp4", poster: "/videos/prabhjit.jpg" },
+  { name: "Dishant", role: "Mentored advisor", src: "/videos/dishant.mp4", poster: "/videos/dishant.jpg" },
+  { name: "Client story", role: "In their words", src: "/videos/testimonial-2.mp4", poster: "/videos/testimonial-2.jpg" },
 ];
 
 // Instagram reels/posts to feature. Add the shortcode from the URL:

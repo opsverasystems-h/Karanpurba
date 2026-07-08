@@ -58,8 +58,8 @@ export function Nav() {
           </a>
           <Signature
             className="h-7 w-auto opacity-80 md:h-8"
-            delay={1000}
-            duration={1400}
+            delay={450}
+            duration={2600}
             ariaHidden
           />
         </div>
