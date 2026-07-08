@@ -9,18 +9,6 @@ const ease = [0.22, 1, 0.36, 1] as const;
 export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden pt-28 md:pt-36">
-      {/* Event-photo backdrop behind the hero */}
-      <div aria-hidden className="absolute inset-0 -z-10 overflow-hidden">
-        <img
-          src="/photos/karan-stage.webp"
-          alt=""
-          className="h-full w-full object-cover object-center"
-        />
-        {/* Ivory veil: opaque on the left (text), fading to reveal the photo */}
-        <div className="absolute inset-0 bg-gradient-to-r from-paper via-paper/88 to-paper/50" />
-        <div className="absolute inset-0 bg-gradient-to-b from-paper/10 via-transparent to-paper" />
-      </div>
-
       {/* warm ambient glow */}
       <div
         aria-hidden
@@ -31,8 +19,8 @@ export function Hero() {
         }}
       />
 
-      <div className="container-site relative grid items-center gap-12 pb-16 md:grid-cols-[1.1fr_0.9fr] md:pb-24">
-        <div>
+      <div className="container-site relative grid items-center gap-12 pb-16 md:grid-cols-[0.92fr_1.08fr] md:pb-24">
+        <div className="md:order-2">
           <motion.p
             className="eyebrow"
             initial={{ opacity: 0, y: 16 }}
@@ -82,7 +70,7 @@ export function Hero() {
 
         {/* Portrait */}
         <motion.div
-          className="relative mx-auto w-full max-w-sm"
+          className="relative mx-auto w-full max-w-sm md:order-1 md:ml-0 md:mr-auto"
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, delay: 0.2, ease }}

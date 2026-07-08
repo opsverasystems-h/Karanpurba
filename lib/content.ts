@@ -52,13 +52,41 @@ export const doors = [
     tag: "For aspiring advisors",
     title: "Build your business",
     blurb:
-      "The exact system Karan used to mentor 200+ advisors — weekly coaching, a 60-day launch plan, and real accountability.",
+      "Most advisors start with unclear direction and pressure tactics on friends and family. This is the opposite — a system to build a sustainable practice, a real personal brand, and lasting client relationships.",
     points: [
-      "Weekly coaching calls & mentorship",
+      "Weekly coaching calls & accountability",
       "60-day launch plan",
-      "Sales, branding & social media training",
+      "Sales, communication & branding training",
     ],
-    cta: "Join the team",
+    cta: "Start your journey",
+  },
+];
+
+// "What you'll achieve" — advisor coaching outcomes (from the coaching program).
+export const outcomes = [
+  {
+    title: "Build confidence",
+    desc: "Walk into any conversation sure of your value — no scripts, no pressure.",
+  },
+  {
+    title: "Sustainable growth systems",
+    desc: "Proven, repeatable systems that grow your practice without burning out.",
+  },
+  {
+    title: "Sales & communication",
+    desc: "Have real conversations that build trust instead of chasing a quota.",
+  },
+  {
+    title: "Grow your personal brand",
+    desc: "Build a presence that brings clients to you — social, content and reputation.",
+  },
+  {
+    title: "Long-term client relationships",
+    desc: "Turn one-time sales into decades-long, referral-driving relationships.",
+  },
+  {
+    title: "Leadership & business skills",
+    desc: "Develop the leadership to build a team and scale beyond yourself.",
   },
 ];
 
@@ -67,8 +95,8 @@ export const story = {
   eyebrow: "About me",
   heading: "From a new immigrant to mentoring an industry.",
   body: [
-    "Nine years ago I landed in Canada with an accounting background and one simple realization: almost no one is ever taught how money actually works.",
-    "So I built a different kind of practice — one that leads with education instead of pressure. Today that approach has guided 3,000+ families and helped train a new generation of 200+ advisors who do this business the right way.",
+    "I came to Canada in 2017 and started out in accounting. What struck me was simple: almost no one is ever taught how money actually works.",
+    "So instead of the usual pressure-based sales, I built my own path — education-first. Since then I've guided 3,000+ families to better financial decisions and mentored 200+ advisors to do this business the right way.",
   ],
   pull: "No high-pressure pitch. Just honest, structured education.",
 };
@@ -77,17 +105,17 @@ export const offers = [
   {
     name: "1:1 Coaching",
     price: "By application",
-    desc: "Direct mentorship to launch or scale your advisory practice.",
-    features: ["Weekly calls", "60-day launch plan", "Accountability"],
+    desc: "Direct mentorship to build your practice the right way — no pressure tactics.",
+    features: ["Weekly coaching calls", "60-day launch plan", "Mentorship & accountability"],
     cta: "Apply now",
     featured: false,
   },
   {
-    name: "Wealth Academy",
+    name: "Advisor Community",
     price: "Membership",
-    desc: "Karan's flagship community — training, live sessions, and a network of operators.",
-    features: ["Live trainings", "Private community", "Resource vault"],
-    cta: "Join the Academy",
+    desc: "Karan's flagship community — training, live sessions, and a network of advisors doing it the right way.",
+    features: ["Sales & communication training", "Social media & branding", "Community support"],
+    cta: "Join the community",
     featured: true,
   },
   {
@@ -103,21 +131,21 @@ export const offers = [
 export const testimonials = [
   {
     quote:
-      "He helped me see that my story as a newcomer wasn't something to hide — it was exactly why people would connect with me. That shift changed everything.",
-    name: "Mentored advisor",
-    detail: "New to Canada · Build Your Business",
-  },
-  {
-    quote:
       "No high-pressure sales pitch — just pure, structured education. I finally understand my own money.",
-    name: "Client review",
-    detail: "Google review · ★★★★★",
+    name: "David K.",
+    detail: "Business owner",
   },
   {
     quote:
-      "Transparent, patient, and genuinely people-first. He treats your future like it's his own.",
-    name: "Client review",
-    detail: "Google review · ★★★★★",
+      "Karan's mentorship is about delivering real value — not the traditional, exhausting pressure tactics.",
+    name: "Sarah M.",
+    detail: "Financial Consultant",
+  },
+  {
+    quote:
+      "A genuinely people-first approach, with clear frameworks I could actually follow.",
+    name: "Rajit S.",
+    detail: "Tech professional",
   },
 ];
 
@@ -141,9 +169,9 @@ export const videoTestimonials: {
   src?: string;
   poster?: string;
 }[] = [
-  { name: "Prabhjit", role: "Client testimonial", src: "/videos/prabhjit.mp4", poster: "/videos/prabhjit.jpg" },
+  { name: "Prabhjit", role: "Mentored advisor", src: "/videos/prabhjit.mp4", poster: "/videos/prabhjit.jpg" },
   { name: "Dishant", role: "Mentored advisor", src: "/videos/dishant.mp4", poster: "/videos/dishant.jpg" },
-  { name: "Client story", role: "In their words", src: "/videos/testimonial-2.mp4", poster: "/videos/testimonial-2.jpg" },
+  { name: "Sukhmeet", role: "Mentored advisor", src: "/videos/testimonial-2.mp4", poster: "/videos/testimonial-2.jpg" },
 ];
 
 // Instagram reels/posts to feature. Add the shortcode from the URL:
