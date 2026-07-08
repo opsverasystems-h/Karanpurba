@@ -143,3 +143,12 @@ export const videoTestimonials: {
 }[] = [
   // Example: { name: "A. Advisor", role: "Mentored to a full practice", youtube: "dQw4w9WgXcQ" },
 ];
+
+// Instagram reels/posts to feature. Add the shortcode from the URL:
+//   https://www.instagram.com/reel/DABC123xyz/  ->  { type: "reel", code: "DABC123xyz" }
+//   https://www.instagram.com/p/DABC123xyz/     ->  { type: "p",    code: "DABC123xyz" }
+// The post/reel must be public. Leave empty to show a placeholder.
+export const reels: { type: "reel" | "p"; code: string; caption?: string }[] = [
+  // Example: { type: "reel", code: "DABC123xyz", caption: "How money actually works" },
+];
+export const instagramHandle = "karanpurba_official";

@@ -5,6 +5,7 @@ import { TwoDoors } from "@/components/TwoDoors";
 import { Story } from "@/components/Story";
 import { ProofWall } from "@/components/ProofWall";
 import { VideoTestimonials } from "@/components/VideoTestimonials";
+import { Reels } from "@/components/Reels";
 import { Offers } from "@/components/Offers";
 import { Booking } from "@/components/Booking";
 import { FinalCTA } from "@/components/FinalCTA";
@@ -21,6 +22,7 @@ export default function Home() {
       <Story />
       <ProofWall />
       <VideoTestimonials />
+      <Reels />
       <Offers />
       <Booking />
       <FinalCTA />
