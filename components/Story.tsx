@@ -2,6 +2,7 @@
 
 import { story } from "@/lib/content";
 import { Reveal } from "./Reveal";
+import { Signature } from "./Signature";
 
 export function Story() {
   return (
@@ -36,6 +37,13 @@ export function Story() {
           <blockquote className="mt-8 border-l-2 border-gold-500 pl-5 font-display text-xl font-medium italic text-ink">
             “{story.pull}”
           </blockquote>
+
+          <div className="mt-8 flex flex-col gap-1">
+            <Signature className="h-16 w-auto opacity-90" duration={2100} delay={250} />
+            <span className="text-xs uppercase tracking-[0.2em] text-ink-mute">
+              Karan Purba
+            </span>
+          </div>
         </Reveal>
       </div>
     </section>

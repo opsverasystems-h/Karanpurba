@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { nav } from "@/lib/content";
+import { Signature } from "./Signature";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -55,18 +56,11 @@ export function Nav() {
               PURBA
             </motion.span>
           </a>
-          <motion.img
-            src="/signature.png"
-            alt="Karan Purba signature"
-            aria-hidden
-            draggable={false}
-            onError={(e) => {
-              e.currentTarget.style.display = "none";
-            }}
-            className="h-7 w-auto select-none object-contain opacity-80 md:h-8"
-            initial={{ opacity: 0, x: -10 }}
-            animate={{ opacity: 0.8, x: 0 }}
-            transition={{ delay: 1, duration: 0.7, ease }}
+          <Signature
+            className="h-7 w-auto opacity-80 md:h-8"
+            delay={1000}
+            duration={1400}
+            ariaHidden
           />
         </div>
 
