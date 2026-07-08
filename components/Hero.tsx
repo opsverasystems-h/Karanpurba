@@ -9,6 +9,18 @@ const ease = [0.22, 1, 0.36, 1] as const;
 export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden pt-28 md:pt-36">
+      {/* Event-photo backdrop behind the hero */}
+      <div aria-hidden className="absolute inset-0 -z-10 overflow-hidden">
+        <img
+          src="/photos/karan-stage.webp"
+          alt=""
+          className="h-full w-full object-cover object-center"
+        />
+        {/* Ivory veil: opaque on the left (text), fading to reveal the photo */}
+        <div className="absolute inset-0 bg-gradient-to-r from-paper via-paper/88 to-paper/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-paper/10 via-transparent to-paper" />
+      </div>
+
       {/* warm ambient glow */}
       <div
         aria-hidden
