@@ -53,15 +53,11 @@ export function Reels() {
                 ⧉
               </span>
               <h3 className="font-display text-xl font-semibold text-ink">
-                Instagram reels go here
+                Coming soon
               </h3>
               <p className="max-w-md text-sm text-ink-soft">
-                Send me the links to the reels Karan wants to feature (e.g.{" "}
-                <code className="rounded bg-paper-deep px-1.5 py-0.5 text-ink">
-                  instagram.com/reel/…
-                </code>
-                ) and they&apos;ll embed here live from Instagram — no uploading
-                needed.
+                Karan&apos;s latest reels are on the way. In the meantime, follow
+                along on Instagram for daily education-first content.
               </p>
             </div>
           </Reveal>
