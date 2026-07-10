@@ -35,7 +35,7 @@ export function TwoDoors() {
                   </li>
                 ))}
               </ul>
-              <a href="#book" className="btn-gold mt-8">
+              <a href={door.href} className="btn-gold mt-8">
                 {door.cta} <span aria-hidden>→</span>
               </a>
             </div>

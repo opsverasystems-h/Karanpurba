@@ -35,30 +35,36 @@ export const socials = [
 
 export const doors = [
   {
-    id: "plan",
-    tag: "For individuals & families",
-    title: "Plan your future",
-    blurb:
-      "Investment education, registered accounts, and a long-term wealth strategy built around your life — not a sales quota.",
-    points: [
-      "Personalized financial planning",
-      "Investment & registered account guidance",
-      "Education-first, zero pressure",
-    ],
-    cta: "Book a consultation",
-  },
-  {
     id: "build",
-    tag: "For aspiring advisors",
+    tag: "For new & experienced financial advisors",
     title: "Build your business",
     blurb:
-      "Most advisors start with unclear direction and pressure tactics on friends and family. This is the opposite — a system to build a sustainable practice, a real personal brand, and lasting client relationships.",
+      "Skip the pressure tactics on friends and family. Build a sustainable practice, a real personal brand, and lasting client relationships.",
     points: [
-      "Weekly coaching calls & accountability",
+      "Weekly coaching calls",
       "60-day launch plan",
-      "Sales, communication & branding training",
+      "Sales & communication training",
+      "Social media & branding support",
+      "Mentorship & accountability",
     ],
-    cta: "Start your journey",
+    cta: "Join the team",
+    href: "#coach",
+  },
+  {
+    id: "plan",
+    tag: "For individuals, families & businesses",
+    title: "Plan your future",
+    blurb:
+      "Investment education, registered accounts, and a long-term wealth strategy built around your life — never a sales quota.",
+    points: [
+      "Financial planning",
+      "Investment education",
+      "Registered account guidance",
+      "Long-term wealth strategy",
+      "Personalized consultations",
+    ],
+    cta: "Get started",
+    href: "#planning",
   },
 ];
 

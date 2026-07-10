@@ -1,5 +1,6 @@
 import { Sidebar } from "@/components/Sidebar";
 import { Hero } from "@/components/Hero";
+import { TwoDoors } from "@/components/TwoDoors";
 import { Story } from "@/components/Story";
 import { ClassroomBand } from "@/components/ClassroomBand";
 import { SectionIntro } from "@/components/SectionIntro";
@@ -22,6 +23,7 @@ export default function Home() {
       <div className="lg:pl-64">
         {/* Home */}
         <Hero />
+        <TwoDoors />
 
         {/* About me */}
         <Story />
