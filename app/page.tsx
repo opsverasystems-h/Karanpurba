@@ -6,7 +6,7 @@ import { ClassroomBand } from "@/components/ClassroomBand";
 import { SectionIntro } from "@/components/SectionIntro";
 import { VideoTestimonials } from "@/components/VideoTestimonials";
 import { CoachContent } from "@/components/CoachContent";
-import { ProofWall } from "@/components/ProofWall";
+import { GoogleReviews } from "@/components/GoogleReviews";
 import { PlanningIncludes } from "@/components/PlanningIncludes";
 import { Skool } from "@/components/Skool";
 import { CtaBand } from "@/components/CtaBand";
@@ -51,7 +51,7 @@ export default function Home() {
           cta={planning.cta}
           ctaHref="#book"
         />
-        <ProofWall />
+        <GoogleReviews />
         <PlanningIncludes />
         <CtaBand
           heading={planning.ctaHeading}
