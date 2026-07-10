@@ -21,26 +21,24 @@ export function Hero() {
 
       <div className="container-site relative grid items-center gap-12 pb-16 md:grid-cols-[0.92fr_1.08fr] md:pb-24">
         <div className="md:order-2">
-          <motion.p
-            className="text-2xl font-bold uppercase tracking-[0.18em] text-gold-600 sm:text-3xl md:text-[2.5rem] md:leading-tight"
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease }}
-          >
-            Financial Consultant &amp; Coach
-          </motion.p>
-
           <motion.h1
-            className="mt-5 font-display text-[2.7rem] font-semibold leading-[1.02] tracking-[-0.01em] text-ink sm:text-6xl lg:text-[4.4rem]"
+            className="font-display text-[2.7rem] font-semibold leading-[1.04] tracking-[-0.01em] text-ink sm:text-6xl lg:text-[4.4rem]"
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.08, ease }}
+            transition={{ duration: 0.7, ease }}
           >
-            Build real wealth
-            <br />
-            without the{" "}
-            <span className="gold-text font-normal">sales pitch.</span>
+            Financial Consultant &amp;{" "}
+            <span className="gold-text font-normal">Coach</span>
           </motion.h1>
+
+          <motion.p
+            className="mt-5 text-2xl font-bold uppercase leading-tight tracking-[0.14em] text-gold-600 sm:text-3xl md:text-[2.2rem]"
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1, ease }}
+          >
+            Build real wealth without the sales pitch
+          </motion.p>
 
           <motion.p
             className="mt-6 max-w-md text-lg leading-relaxed text-ink-soft"

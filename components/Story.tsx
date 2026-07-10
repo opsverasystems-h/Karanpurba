@@ -18,7 +18,7 @@ export function Story() {
               <img
                 src="/photos/karan-speaking.webp"
                 alt="Karan Purba speaking at an event"
-                className="absolute inset-0 h-full w-full object-cover object-center"
+                className="absolute inset-0 h-full w-full object-cover object-[50%_85%]"
               />
             </div>
           </div>
