@@ -5,11 +5,11 @@ import { Reveal } from "./Reveal";
 
 export function ProofWall() {
   return (
-    <section className="container-site py-20 md:py-28">
+    <section id="reviews" className="container-site py-20 md:py-28">
       <Reveal className="mx-auto max-w-2xl text-center">
-        <p className="eyebrow">Proof, not promises</p>
+        <p className="eyebrow">Google reviews</p>
         <h2 className="mt-4 font-display text-3xl font-semibold leading-tight text-ink md:text-5xl">
-          What people say
+          What clients say
         </h2>
         <div className="mt-5 flex items-center justify-center gap-2 text-gold-500">
           <span className="text-lg tracking-widest">★★★★★</span>

@@ -59,10 +59,10 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.24, ease }}
           >
-            <a href="#doors" className="btn-gold">
+            <a href="#planning" className="btn-gold">
               Plan your future <span aria-hidden>→</span>
             </a>
-            <a href="#doors" className="btn-ghost">
+            <a href="#coach" className="btn-ghost">
               Build your business
             </a>
           </motion.div>

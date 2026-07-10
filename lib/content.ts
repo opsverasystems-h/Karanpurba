@@ -150,11 +150,65 @@ export const testimonials = [
 ];
 
 export const nav = [
-  { label: "About", href: "#about" },
-  { label: "Coaching", href: "#offers" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Plan your future", href: "#doors" },
+  { label: "Home", href: "#top" },
+  { label: "About me", href: "#about" },
+  { label: "Coach with Karan", href: "#coach" },
+  { label: "Financial planning", href: "#planning" },
+  { label: "Wealth Academy", href: "#academy" },
+  { label: "Contact", href: "#contact" },
 ];
+
+// ---- Three offerings, each: intro (start) -> proof -> content -> CTA ----
+
+export const coach = {
+  eyebrow: "Coach with Karan",
+  title: "Build your advisory business the right way",
+  body: "Most advisors start with unclear direction and pressure tactics on friends and family. This is the opposite — a proven system to build a sustainable practice, a real personal brand, and lasting client relationships.",
+  cta: "Start your journey",
+  // "What you get" — program inclusions
+  get: [
+    "Weekly coaching calls",
+    "Mentorship & accountability",
+    "60-day launch plan",
+    "Sales & communication training",
+    "Social media & personal branding",
+    "Client presentation support",
+    "Growth systems & strategy",
+    "Community support",
+  ],
+  ctaHeading: "Ready to build it the right way?",
+  ctaButton: "Start your journey",
+};
+
+export const planning = {
+  eyebrow: "Financial planning",
+  title: "Plan your future — not a sales quota",
+  body: "Investment education, registered accounts, and a long-term wealth strategy built around your life. Education-first, zero pressure — so you finally understand and control your money.",
+  cta: "Book a consultation",
+  includes: [
+    "Personalized financial plan",
+    "Investment & registered account guidance",
+    "Retirement & first-home planning",
+    "Family protection & insurance",
+    "Long-term, education-first strategy",
+    "A partner who treats your future like their own",
+  ],
+  ctaHeading: "Let's plan your future together",
+  ctaButton: "Book a free consultation",
+};
+
+export const academy = {
+  eyebrow: "Wealth Academy",
+  title: "Join the community",
+  body: "Karan's flagship community — trainings, live sessions, resources, and a network of advisors and learners all doing this the right way.",
+  cta: "Join the Academy",
+  // Set skoolUrl to your Skool community link, and add a screenshot at
+  // public/photos/skool.png (or .webp) once you share it.
+  skoolUrl: "",
+  skoolImage: "/photos/skool.webp",
+  ctaHeading: "Your seat is waiting",
+  ctaButton: "Join the Wealth Academy",
+};
 
 // Video testimonials. Two ways to add each one (see public/videos/README):
 //   1. YouTube/Vimeo (recommended — no repo bloat): { name, role, youtube: "VIDEO_ID" }
