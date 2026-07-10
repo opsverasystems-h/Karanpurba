@@ -9,10 +9,22 @@ function VideoCard({
   item: (typeof videoTestimonials)[number];
 }) {
   const portrait = Boolean(item.src && !item.youtube && !item.vimeo);
+  const handle = item.handle
+    ? item.handle.startsWith("@")
+      ? item.handle
+      : `@${item.handle}`
+    : null;
   return (
-    <figure className="overflow-hidden rounded-3xl border border-line bg-paper-card">
+    <figure className="flex flex-col text-center">
+      {item.quote && (
+        <blockquote className="mb-6 px-1 text-sm italic leading-relaxed text-ink-soft sm:min-h-[4.5rem]">
+          &ldquo;{item.quote}&rdquo;
+        </blockquote>
+      )}
       <div
-        className={`relative bg-paper-deep ${portrait ? "aspect-[9/16]" : "aspect-video"}`}
+        className={`relative overflow-hidden rounded-2xl border border-line bg-paper-deep ${
+          portrait ? "aspect-[9/16]" : "aspect-video"
+        }`}
       >
         {item.youtube ? (
           <iframe
@@ -42,9 +54,21 @@ function VideoCard({
           />
         ) : null}
       </div>
-      <figcaption className="px-5 py-4">
-        <div className="text-sm font-medium text-ink">{item.name}</div>
-        <div className="text-xs text-ink-mute">{item.role}</div>
+      <figcaption className="mt-5">
+        <div className="font-display text-xl font-semibold text-ink">
+          {item.name}
+        </div>
+        {handle && (
+          <a
+            href={`https://www.instagram.com/${handle.slice(1)}/`}
+            className="mt-1 inline-block text-sm text-gold-600 transition-colors hover:text-gold-500"
+          >
+            {handle}
+          </a>
+        )}
+        <div className="mt-1 text-xs text-ink-mute">
+          {item.followers || item.role}
+        </div>
       </figcaption>
     </figure>
   );

@@ -224,14 +224,35 @@ export const academy = {
 export const videoTestimonials: {
   name: string;
   role: string;
+  quote?: string; // short pull-quote shown above the video
+  handle?: string; // e.g. "@name" (Instagram) - optional
+  followers?: string; // e.g. "21.9k followers" - optional
   youtube?: string;
   vimeo?: string;
   src?: string;
   poster?: string;
 }[] = [
-  { name: "Prabhjit", role: "Mentored advisor", src: "/videos/prabhjit.mp4", poster: "/videos/prabhjit.jpg" },
-  { name: "Dishant", role: "Mentored advisor", src: "/videos/dishant.mp4", poster: "/videos/dishant.jpg" },
-  { name: "Sukhmeet", role: "Mentored advisor", src: "/videos/testimonial-2.mp4", poster: "/videos/testimonial-2.jpg" },
+  {
+    name: "Prabhjit",
+    role: "Mentored advisor",
+    quote: "The mentorship gave me a real plan - I finally feel in control of my growth.",
+    src: "/videos/prabhjit.mp4",
+    poster: "/videos/prabhjit.jpg",
+  },
+  {
+    name: "Dishant",
+    role: "Mentored advisor",
+    quote: "From starting out to real momentum - being around the right energy changed everything.",
+    src: "/videos/dishant.mp4",
+    poster: "/videos/dishant.jpg",
+  },
+  {
+    name: "Sukhmeet",
+    role: "Mentored advisor",
+    quote: "I learned to lead with education, not pressure - and clients actually trust me now.",
+    src: "/videos/testimonial-2.mp4",
+    poster: "/videos/testimonial-2.jpg",
+  },
 ];
 
 // Instagram reels/posts to feature. Add the shortcode from the URL:
