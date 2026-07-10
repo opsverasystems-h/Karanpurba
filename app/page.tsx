@@ -1,6 +1,5 @@
 import { Sidebar } from "@/components/Sidebar";
 import { Hero } from "@/components/Hero";
-import { SocialProof } from "@/components/SocialProof";
 import { TwoDoors } from "@/components/TwoDoors";
 import { Story } from "@/components/Story";
 import { ClassroomBand } from "@/components/ClassroomBand";
@@ -20,7 +19,6 @@ export default function Home() {
       <Sidebar />
       <div className="lg:pl-64">
         <Hero />
-        <SocialProof />
         <TwoDoors />
         <Story />
         <ClassroomBand />
