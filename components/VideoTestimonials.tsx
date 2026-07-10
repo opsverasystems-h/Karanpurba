@@ -15,7 +15,7 @@ function VideoCard({
       : `@${item.handle}`
     : null;
   return (
-    <figure className="flex flex-col text-center">
+    <figure className="flex h-full flex-col rounded-3xl border border-line bg-paper-card p-6 text-center md:p-7">
       {item.quote && (
         <blockquote className="mb-6 px-1 text-sm italic leading-relaxed text-ink-soft sm:min-h-[4.5rem]">
           &ldquo;{item.quote}&rdquo;
@@ -92,7 +92,7 @@ export function VideoTestimonials() {
       {hasVideos ? (
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {videoTestimonials.map((item, i) => (
-            <Reveal key={i} delay={i * 0.06}>
+            <Reveal key={i} delay={i * 0.06} className="h-full">
               <VideoCard item={item} />
             </Reveal>
           ))}
