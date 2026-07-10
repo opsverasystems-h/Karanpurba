@@ -22,7 +22,7 @@ export function Hero() {
       <div className="container-site relative grid items-center gap-12 pb-16 md:grid-cols-[0.92fr_1.08fr] md:pb-24">
         <div className="md:order-2">
           <motion.p
-            className="eyebrow"
+            className="font-display text-2xl font-semibold uppercase tracking-[0.12em] text-gold-600 sm:text-3xl md:text-4xl"
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease }}
