@@ -37,6 +37,50 @@ export function GoogleReviews() {
     sc.setAttribute("lang", "us");
     sc.setAttribute("brandStyle", BRAND_STYLE);
     host.appendChild(sc);
+
+    // The HiFive carousel clips long reviews inside fixed-height cards with an
+    // inner scrollbar. Expand the cards (inside its shadow DOM) so the full
+    // review text shows and the inner sliders disappear.
+    const expand = () => {
+      const shadow = host.querySelector<HTMLElement>("#id1")?.shadowRoot;
+      const cards = shadow?.querySelectorAll<HTMLElement>('[class*="MuiCard-root"]');
+      if (!cards || !cards.length) return false;
+      cards.forEach((c) => {
+        c.style.setProperty("height", "auto", "important");
+        c.style.setProperty("max-height", "none", "important");
+        c.style.setProperty("overflow", "visible", "important");
+      });
+      shadow?.querySelectorAll<HTMLElement>("*").forEach((el) => {
+        const oy = getComputedStyle(el).overflowY;
+        if (oy === "auto" || oy === "scroll") {
+          el.style.setProperty("overflow", "visible", "important");
+          el.style.setProperty("max-height", "none", "important");
+          el.style.setProperty("height", "auto", "important");
+        }
+      });
+      return true;
+    };
+
+    let tries = 0;
+    let observer: MutationObserver | null = null;
+    const interval = setInterval(() => {
+      tries += 1;
+      if (expand()) {
+        const shadow = host.querySelector<HTMLElement>("#id1")?.shadowRoot;
+        if (shadow) {
+          observer = new MutationObserver(() => expand());
+          observer.observe(shadow, { childList: true, subtree: true });
+        }
+        clearInterval(interval);
+      } else if (tries > 40) {
+        clearInterval(interval);
+      }
+    }, 500);
+
+    return () => {
+      clearInterval(interval);
+      observer?.disconnect();
+    };
   }, []);
 
   return (
