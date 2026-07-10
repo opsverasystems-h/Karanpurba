@@ -36,7 +36,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.08, ease }}
           >
-            Build real wealth —
+            Build real wealth
             <br />
             without the{" "}
             <span className="gold-text font-normal">sales pitch.</span>
@@ -50,7 +50,7 @@ export function Hero() {
           >
             I&apos;ve mentored 200+ advisors and guided 3,000+ families to
             financial clarity. Whether you&apos;re planning your future or
-            building your practice — start here.
+            building your practice - start here.
           </motion.p>
 
           <motion.div

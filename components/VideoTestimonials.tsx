@@ -84,7 +84,7 @@ export function VideoTestimonials() {
             </h3>
             <p className="max-w-md text-sm text-ink-soft">
               Upload each clip to YouTube or Vimeo (unlisted is fine) and share
-              the links — or drop small mp4 files in{" "}
+              the links - or drop small mp4 files in{" "}
               <code className="rounded bg-paper-deep px-1.5 py-0.5 text-ink">
                 public/videos
               </code>

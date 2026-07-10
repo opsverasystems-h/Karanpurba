@@ -17,7 +17,7 @@ export function Skool() {
         </h2>
         <p className="mx-auto mt-4 max-w-lg text-ink-soft">
           Live trainings, a resource vault, and a network that keeps you
-          accountable — all in one place on Skool.
+          accountable - all in one place on Skool.
         </p>
       </Reveal>
 

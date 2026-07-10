@@ -18,7 +18,7 @@ export function Sidebar() {
     <>
       {/* Desktop: fixed left panel */}
       <aside className="fixed inset-y-0 left-0 z-50 hidden w-64 flex-col border-r border-line bg-paper-band px-7 py-9 lg:flex">
-        <a href="#top" aria-label="Karan Purba — home" className="inline-block">
+        <a href="#top" aria-label="Karan Purba - home" className="inline-block">
           <Signature
             className="h-12 w-auto opacity-90"
             delay={450}
@@ -53,7 +53,7 @@ export function Sidebar() {
 
       {/* Mobile: top bar */}
       <header className="fixed inset-x-0 top-0 z-50 flex h-16 items-center justify-between border-b border-line bg-paper/85 px-6 backdrop-blur-md lg:hidden">
-        <a href="#top" aria-label="Karan Purba — home" className="inline-block">
+        <a href="#top" aria-label="Karan Purba - home" className="inline-block">
           <Signature className="h-8 w-auto opacity-85" delay={450} duration={2600} />
         </a>
         <button

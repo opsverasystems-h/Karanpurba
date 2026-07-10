@@ -12,7 +12,7 @@ export function Booking() {
           Schedule a free call
         </h2>
         <p className="mx-auto mt-4 max-w-lg text-ink-soft">
-          Pick a time that works for you. No pressure — just a conversation
+          Pick a time that works for you. No pressure - just a conversation
           about your next step, whether you&apos;re planning or building.
         </p>
       </Reveal>

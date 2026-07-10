@@ -22,7 +22,7 @@ export function ClassroomBand() {
           <span className="italic text-gold-300">sales pitch.</span>
         </h2>
         <p className="mx-auto mt-5 max-w-xl text-paper/75">
-          From lecture halls to living rooms — teaching the next generation of
+          From lecture halls to living rooms - teaching the next generation of
           advisors and families how money actually works.
         </p>
       </Reveal>

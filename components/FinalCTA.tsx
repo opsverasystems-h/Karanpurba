@@ -31,7 +31,7 @@ export function FinalCTA() {
             </span>
           </h2>
           <p className="relative mx-auto mt-5 max-w-md text-paper/70">
-            Book a free, no-pressure call. We&apos;ll figure out the right path —
+            Book a free, no-pressure call. We&apos;ll figure out the right path -
             whether you&apos;re planning or building.
           </p>
           <div className="relative mt-8 flex flex-wrap justify-center gap-3">

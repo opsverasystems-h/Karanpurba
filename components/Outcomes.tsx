@@ -12,7 +12,7 @@ export function Outcomes() {
           Build your career the right way
         </h2>
         <p className="mx-auto mt-4 max-w-lg text-ink-soft">
-          Whether you&apos;re just starting out or scaling your practice —
+          Whether you&apos;re just starting out or scaling your practice -
           practical mentorship, proven systems, and real support.
         </p>
       </Reveal>

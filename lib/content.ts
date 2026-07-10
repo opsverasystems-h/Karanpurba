@@ -8,7 +8,7 @@ export const brand = {
 };
 
 // Appointment booking. Paste your scheduling page URL into `url` to go live.
-// Recommended: Google Calendar "Appointment schedule" — free, and bookings land
+// Recommended: Google Calendar "Appointment schedule" - free, and bookings land
 // straight in your Google Calendar (calendar.google.com -> Create -> Appointment
 // schedule -> ... -> "Share" -> copy the booking page link).
 // Also works as-is with Cal.com or Calendly (paste their booking link instead).
@@ -27,10 +27,10 @@ export const stats = [
 
 // Real follower numbers go here once confirmed.
 export const socials = [
-  { platform: "Instagram", handle: "@karanpurba", value: "—" },
-  { platform: "YouTube", handle: "Karan Purba", value: "—" },
-  { platform: "TikTok", handle: "@karanpurba", value: "—" },
-  { platform: "LinkedIn", handle: "Karan Purba", value: "—" },
+  { platform: "Instagram", handle: "@karanpurba", value: "-" },
+  { platform: "YouTube", handle: "Karan Purba", value: "-" },
+  { platform: "TikTok", handle: "@karanpurba", value: "-" },
+  { platform: "LinkedIn", handle: "Karan Purba", value: "-" },
 ];
 
 export const doors = [
@@ -55,7 +55,7 @@ export const doors = [
     tag: "For individuals, families & businesses",
     title: "Plan your future",
     blurb:
-      "Investment education, registered accounts, and a long-term wealth strategy built around your life — never a sales quota.",
+      "Investment education, registered accounts, and a long-term wealth strategy built around your life - never a sales quota.",
     points: [
       "Financial planning",
       "Investment education",
@@ -68,11 +68,11 @@ export const doors = [
   },
 ];
 
-// "What you'll achieve" — advisor coaching outcomes (from the coaching program).
+// "What you'll achieve" - advisor coaching outcomes (from the coaching program).
 export const outcomes = [
   {
     title: "Build confidence",
-    desc: "Walk into any conversation sure of your value — no scripts, no pressure.",
+    desc: "Walk into any conversation sure of your value - no scripts, no pressure.",
   },
   {
     title: "Sustainable growth systems",
@@ -84,7 +84,7 @@ export const outcomes = [
   },
   {
     title: "Grow your personal brand",
-    desc: "Build a presence that brings clients to you — social, content and reputation.",
+    desc: "Build a presence that brings clients to you - social, content and reputation.",
   },
   {
     title: "Long-term client relationships",
@@ -96,13 +96,13 @@ export const outcomes = [
   },
 ];
 
-// Karan's own story — written in FIRST PERSON (this is his personal site).
+// Karan's own story - written in FIRST PERSON (this is his personal site).
 export const story = {
   eyebrow: "About me",
   heading: "From a new immigrant to mentoring an industry.",
   body: [
     "I came to Canada in 2017 and started out in accounting. What struck me was simple: almost no one is ever taught how money actually works.",
-    "So instead of the usual pressure-based sales, I built my own path — education-first. Since then I've guided 3,000+ families to better financial decisions and mentored 200+ advisors to do this business the right way.",
+    "So instead of the usual pressure-based sales, I built my own path - education-first. Since then I've guided 3,000+ families to better financial decisions and mentored 200+ advisors to do this business the right way.",
   ],
   pull: "No high-pressure pitch. Just honest, structured education.",
 };
@@ -111,7 +111,7 @@ export const offers = [
   {
     name: "1:1 Coaching",
     price: "By application",
-    desc: "Direct mentorship to build your practice the right way — no pressure tactics.",
+    desc: "Direct mentorship to build your practice the right way - no pressure tactics.",
     features: ["Weekly coaching calls", "60-day launch plan", "Mentorship & accountability"],
     cta: "Apply now",
     featured: false,
@@ -119,7 +119,7 @@ export const offers = [
   {
     name: "Advisor Community",
     price: "Membership",
-    desc: "Karan's flagship community — training, live sessions, and a network of advisors doing it the right way.",
+    desc: "Karan's flagship community - training, live sessions, and a network of advisors doing it the right way.",
     features: ["Sales & communication training", "Social media & branding", "Community support"],
     cta: "Join the community",
     featured: true,
@@ -137,13 +137,13 @@ export const offers = [
 export const testimonials = [
   {
     quote:
-      "No high-pressure sales pitch — just pure, structured education. I finally understand my own money.",
+      "No high-pressure sales pitch - just pure, structured education. I finally understand my own money.",
     name: "David K.",
     detail: "Business owner",
   },
   {
     quote:
-      "Karan's mentorship is about delivering real value — not the traditional, exhausting pressure tactics.",
+      "Karan's mentorship is about delivering real value - not the traditional, exhausting pressure tactics.",
     name: "Sarah M.",
     detail: "Financial Consultant",
   },
@@ -169,9 +169,9 @@ export const nav = [
 export const coach = {
   eyebrow: "Coach with Karan",
   title: "Build your advisory business the right way",
-  body: "Most advisors start with unclear direction and pressure tactics on friends and family. This is the opposite — a proven system to build a sustainable practice, a real personal brand, and lasting client relationships.",
+  body: "Most advisors start with unclear direction and pressure tactics on friends and family. This is the opposite - a proven system to build a sustainable practice, a real personal brand, and lasting client relationships.",
   cta: "Start your journey",
-  // "What you get" — program inclusions
+  // "What you get" - program inclusions
   get: [
     "Weekly coaching calls",
     "Mentorship & accountability",
@@ -188,8 +188,8 @@ export const coach = {
 
 export const planning = {
   eyebrow: "Financial planning",
-  title: "Plan your future — not a sales quota",
-  body: "Investment education, registered accounts, and a long-term wealth strategy built around your life. Education-first, zero pressure — so you finally understand and control your money.",
+  title: "Plan your future - not a sales quota",
+  body: "Investment education, registered accounts, and a long-term wealth strategy built around your life. Education-first, zero pressure - so you finally understand and control your money.",
   cta: "Book a consultation",
   includes: [
     "Personalized financial plan",
@@ -206,7 +206,7 @@ export const planning = {
 export const academy = {
   eyebrow: "Wealth Academy",
   title: "Join the community",
-  body: "Karan's flagship community — trainings, live sessions, resources, and a network of advisors and learners all doing this the right way.",
+  body: "Karan's flagship community - trainings, live sessions, resources, and a network of advisors and learners all doing this the right way.",
   cta: "Join the Academy",
   // Set skoolUrl to your Skool community link, and add a screenshot at
   // public/photos/skool.png (or .webp) once you share it.
@@ -217,7 +217,7 @@ export const academy = {
 };
 
 // Video testimonials. Two ways to add each one (see public/videos/README):
-//   1. YouTube/Vimeo (recommended — no repo bloat): { name, role, youtube: "VIDEO_ID" }
+//   1. YouTube/Vimeo (recommended - no repo bloat): { name, role, youtube: "VIDEO_ID" }
 //      or { name, role, vimeo: "VIMEO_ID" }
 //   2. Self-hosted small mp4 in public/videos: { name, role, src: "/videos/x.mp4", poster: "/videos/x.jpg" }
 // Leave this array empty to show an "add your videos" placeholder.
