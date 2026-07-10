@@ -21,7 +21,7 @@ export function Hero() {
 
       <div className="container-site relative grid items-center gap-12 pb-16 md:grid-cols-[0.92fr_1.08fr] md:pb-24">
         <div className="md:order-2">
-          <p className="mb-4 flex gap-[0.3em] overflow-hidden text-sm font-semibold uppercase tracking-[0.32em] text-gold-600 md:mb-5 md:text-base">
+          <p className="mb-4 flex gap-[0.3em] overflow-hidden text-lg font-bold uppercase tracking-[0.26em] text-gold-600 sm:text-xl md:mb-5 md:text-2xl">
             <motion.span
               className="inline-block"
               initial={{ x: -180, opacity: 0 }}
