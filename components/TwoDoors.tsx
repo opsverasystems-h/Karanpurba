@@ -18,8 +18,8 @@ export function TwoDoors() {
 
       <div className="mt-12 grid gap-6 md:grid-cols-2">
         {doors.map((door, i) => (
-          <Reveal key={door.id} delay={i * 0.08}>
-            <div className="group relative h-full overflow-hidden rounded-3xl border border-line bg-paper-card p-8 transition-all duration-300 hover:border-gold-400/60 hover:shadow-[0_20px_50px_-30px_rgba(28,26,22,0.35)] md:p-10">
+          <Reveal key={door.id} delay={i * 0.08} className="h-full">
+            <div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-line bg-paper-card p-8 transition-all duration-300 hover:border-gold-400/60 hover:shadow-[0_20px_50px_-30px_rgba(28,26,22,0.35)] md:p-10">
               <span className="text-xs font-medium uppercase tracking-[0.2em] text-gold-600">
                 {door.tag}
               </span>
@@ -35,9 +35,11 @@ export function TwoDoors() {
                   </li>
                 ))}
               </ul>
-              <a href={door.href} className="btn-gold mt-8">
-                {door.cta} <span aria-hidden>→</span>
-              </a>
+              <div className="mt-auto pt-8">
+                <a href={door.href} className="btn-gold">
+                  {door.cta} <span aria-hidden>→</span>
+                </a>
+              </div>
             </div>
           </Reveal>
         ))}
