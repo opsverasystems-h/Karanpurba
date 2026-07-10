@@ -21,11 +21,38 @@ export function Hero() {
 
       <div className="container-site relative grid items-center gap-12 pb-16 md:grid-cols-[0.92fr_1.08fr] md:pb-24">
         <div className="md:order-2">
+          <p className="mb-4 flex gap-[0.3em] overflow-hidden text-sm font-semibold uppercase tracking-[0.32em] text-gold-600 md:mb-5 md:text-base">
+            <motion.span
+              className="inline-block"
+              initial={{ x: -180, opacity: 0 }}
+              animate={{ x: [-180, 0, -7, 0], opacity: [0, 1, 1, 1] }}
+              transition={{
+                duration: 1.1,
+                times: [0, 0.5, 0.72, 1],
+                ease: ["easeIn", "easeOut", "easeOut"],
+              }}
+            >
+              Karan
+            </motion.span>
+            <motion.span
+              className="inline-block"
+              initial={{ x: 180, opacity: 0 }}
+              animate={{ x: [180, 0, 7, 0], opacity: [0, 1, 1, 1] }}
+              transition={{
+                duration: 1.1,
+                times: [0, 0.5, 0.72, 1],
+                ease: ["easeIn", "easeOut", "easeOut"],
+              }}
+            >
+              Purba
+            </motion.span>
+          </p>
+
           <motion.h1
             className="font-display text-[2.7rem] font-semibold leading-[1.04] tracking-[-0.01em] text-ink sm:text-6xl lg:text-[4.4rem]"
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease }}
+            transition={{ duration: 0.7, delay: 0.3, ease }}
           >
             Financial Consultant &amp;{" "}
             <span className="gold-text font-normal">Coach</span>
