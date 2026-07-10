@@ -41,19 +41,23 @@ export function GoogleReviews() {
     // The HiFive carousel clips long reviews inside fixed-height cards with an
     // inner scrollbar. Expand the cards (inside its shadow DOM) so the full
     // review text shows and the inner sliders disappear.
+    const CARD_H = 360; // uniform card height (a bit bigger than the default)
     const expand = () => {
       const shadow = host.querySelector<HTMLElement>("#id1")?.shadowRoot;
       const cards = shadow?.querySelectorAll<HTMLElement>('[class*="MuiCard-root"]');
       if (!cards || !cards.length) return false;
+      // All cards the same fixed height, clipped (no inner scrollbars).
       cards.forEach((c) => {
-        c.style.setProperty("height", "auto", "important");
-        c.style.setProperty("max-height", "none", "important");
-        c.style.setProperty("overflow", "visible", "important");
+        c.style.setProperty("height", `${CARD_H}px`, "important");
+        c.style.setProperty("min-height", `${CARD_H}px`, "important");
+        c.style.setProperty("max-height", `${CARD_H}px`, "important");
+        c.style.setProperty("overflow", "hidden", "important");
       });
+      // Remove the inner scrollbars so the card clips instead of scrolling.
       shadow?.querySelectorAll<HTMLElement>("*").forEach((el) => {
         const oy = getComputedStyle(el).overflowY;
         if (oy === "auto" || oy === "scroll") {
-          el.style.setProperty("overflow", "visible", "important");
+          el.style.setProperty("overflow", "hidden", "important");
           el.style.setProperty("max-height", "none", "important");
           el.style.setProperty("height", "auto", "important");
         }
