@@ -59,23 +59,14 @@ export function Hero() {
           </motion.h1>
 
           <motion.p
-            className="mt-5 text-2xl font-bold uppercase leading-tight tracking-[0.14em] text-gold-600 sm:text-3xl md:text-[2.2rem]"
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1, ease }}
-          >
-            Build real wealth without the sales pitch
-          </motion.p>
-
-          <motion.p
-            className="mt-6 max-w-md text-lg leading-relaxed text-ink-soft"
+            className="mt-6 max-w-lg text-lg leading-relaxed text-ink-soft"
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.16, ease }}
           >
-            I&apos;ve mentored 200+ advisors and guided 3,000+ families to
-            financial clarity. Whether you&apos;re planning your future or
-            building your practice - start here.
+            Helping regular people make better financial decisions, build
+            stronger financial foundations, and create sustainable businesses
+            through an education-first approach.
           </motion.p>
 
           <motion.div
