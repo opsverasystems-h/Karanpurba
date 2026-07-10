@@ -1,44 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import { nav, instagramHandle } from "@/lib/content";
 import { Signature } from "./Signature";
-
-const ease = [0.22, 1, 0.36, 1] as const;
-
-function Wordmark({ className = "" }: { className?: string }) {
-  return (
-    <a
-      href="#top"
-      className={`flex font-display text-base font-medium tracking-[0.16em] text-ink ${className}`}
-      aria-label="Karan Purba"
-    >
-      <motion.span
-        initial={{ x: -40, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.1, ease }}
-      >
-        KARAN
-      </motion.span>
-      <motion.span
-        className="text-gold-600"
-        initial={{ scale: 0, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ delay: 0.55, duration: 0.4, ease }}
-      >
-        .
-      </motion.span>
-      <motion.span
-        initial={{ x: 40, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.2, ease }}
-      >
-        PURBA
-      </motion.span>
-    </a>
-  );
-}
 
 export function Sidebar() {
   const [open, setOpen] = useState(false);
@@ -54,10 +18,13 @@ export function Sidebar() {
     <>
       {/* Desktop: fixed left panel */}
       <aside className="fixed inset-y-0 left-0 z-50 hidden w-64 flex-col border-r border-line bg-paper-band px-7 py-9 lg:flex">
-        <div>
-          <Wordmark />
-          <Signature className="mt-3 h-9 w-auto opacity-80" delay={450} duration={2600} ariaHidden />
-        </div>
+        <a href="#top" aria-label="Karan Purba — home" className="inline-block">
+          <Signature
+            className="h-12 w-auto opacity-90"
+            delay={450}
+            duration={2600}
+          />
+        </a>
 
         <nav className="mt-14 flex flex-col gap-5">
           {nav.map((item) => (
@@ -86,10 +53,9 @@ export function Sidebar() {
 
       {/* Mobile: top bar */}
       <header className="fixed inset-x-0 top-0 z-50 flex h-16 items-center justify-between border-b border-line bg-paper/85 px-6 backdrop-blur-md lg:hidden">
-        <div className="flex items-center gap-2.5">
-          <Wordmark />
-          <Signature className="h-7 w-auto opacity-80" delay={450} duration={2600} ariaHidden />
-        </div>
+        <a href="#top" aria-label="Karan Purba — home" className="inline-block">
+          <Signature className="h-8 w-auto opacity-85" delay={450} duration={2600} />
+        </a>
         <button
           aria-label="Toggle menu"
           onClick={() => setOpen((o) => !o)}
