@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { nav, instagramHandle } from "@/lib/content";
+import { nav } from "@/lib/content";
 import { Signature } from "./Signature";
+import { SocialIcons } from "./SocialIcons";
 
 export function Sidebar() {
   const [open, setOpen] = useState(false);
@@ -40,12 +41,7 @@ export function Sidebar() {
 
         <div className="flex-1" />
 
-        <a
-          href={`https://www.instagram.com/${instagramHandle}/`}
-          className="mb-5 text-xs uppercase tracking-[0.18em] text-ink-mute transition-colors hover:text-gold-600"
-        >
-          @{instagramHandle}
-        </a>
+        <SocialIcons className="mb-6" />
         <a href="#book" className="btn-gold w-full">
           Book a call
         </a>
@@ -93,6 +89,7 @@ export function Sidebar() {
               >
                 Book a call
               </a>
+              <SocialIcons className="mt-3" />
             </div>
           </div>
         </div>

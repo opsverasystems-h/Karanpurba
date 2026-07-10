@@ -33,6 +33,16 @@ export const socials = [
   { platform: "LinkedIn", handle: "Karan Purba", value: "-" },
 ];
 
+// Social icon links for the sidebar. Confirm/replace these URLs with Karan's
+// exact profile links.
+export const socialLinks: { name: "Instagram" | "TikTok" | "Facebook" | "LinkedIn" | "YouTube"; url: string }[] = [
+  { name: "Instagram", url: "https://www.instagram.com/karanpurba_official/" },
+  { name: "TikTok", url: "https://www.tiktok.com/@karanpurba_official" },
+  { name: "Facebook", url: "https://www.facebook.com/karanpurba" },
+  { name: "LinkedIn", url: "https://www.linkedin.com/in/karanpurba/" },
+  { name: "YouTube", url: "https://www.youtube.com/@karanpurba" },
+];
+
 export const doors = [
   {
     id: "build",
