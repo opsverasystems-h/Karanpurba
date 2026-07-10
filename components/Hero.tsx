@@ -80,7 +80,7 @@ export function Hero() {
             <img
               src="/photos/karan-hero.webp"
               alt="Karan Purba, Financial Consultant & Coach"
-              className="absolute inset-0 h-full w-full object-cover object-top"
+              className="absolute inset-0 h-full w-full object-cover object-[50%_62%]"
             />
             <span className="absolute bottom-4 right-4 rounded-full border border-line bg-paper/85 px-3 py-1 text-xs text-ink backdrop-blur-sm">
               Vancouver, Canada
