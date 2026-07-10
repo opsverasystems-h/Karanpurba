@@ -9,7 +9,7 @@ export function Booking() {
       <Reveal className="mx-auto max-w-2xl text-center">
         <p className="eyebrow">Book your spot</p>
         <h2 className="mt-4 font-display text-3xl font-semibold leading-tight text-ink md:text-5xl">
-          Schedule a free call
+          Schedule a call
         </h2>
         <p className="mx-auto mt-4 max-w-lg text-ink-soft">
           Pick a time that works for you. No pressure - just a conversation

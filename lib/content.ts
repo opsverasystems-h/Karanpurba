@@ -200,7 +200,7 @@ export const planning = {
     "A partner who treats your future like their own",
   ],
   ctaHeading: "Let's plan your future together",
-  ctaButton: "Book a free consultation",
+  ctaButton: "Book a consultation",
 };
 
 export const academy = {
