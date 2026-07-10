@@ -14,8 +14,8 @@ export const brand = {
 // Also works as-is with Cal.com or Calendly (paste their booking link instead).
 // Leave `url` empty to show a "booking opens soon" placeholder with an email fallback.
 export const booking = {
-  url: "",
-  provider: "Google Calendar",
+  url: "https://calendly.com/karanpurba_?hide_gdpr_banner=1",
+  provider: "Calendly",
 };
 
 export const stats = [
