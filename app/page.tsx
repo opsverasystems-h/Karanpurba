@@ -1,4 +1,4 @@
-import { Nav } from "@/components/Nav";
+import { Sidebar } from "@/components/Sidebar";
 import { Hero } from "@/components/Hero";
 import { SocialProof } from "@/components/SocialProof";
 import { TwoDoors } from "@/components/TwoDoors";
@@ -17,20 +17,22 @@ import { StickyCTA } from "@/components/StickyCTA";
 export default function Home() {
   return (
     <main className="relative">
-      <Nav />
-      <Hero />
-      <SocialProof />
-      <TwoDoors />
-      <Story />
-      <ClassroomBand />
-      <ProofWall />
-      <VideoTestimonials />
-      <Reels />
-      <Outcomes />
-      <Offers />
-      <Booking />
-      <FinalCTA />
-      <Footer />
+      <Sidebar />
+      <div className="lg:pl-64">
+        <Hero />
+        <SocialProof />
+        <TwoDoors />
+        <Story />
+        <ClassroomBand />
+        <ProofWall />
+        <VideoTestimonials />
+        <Reels />
+        <Outcomes />
+        <Offers />
+        <Booking />
+        <FinalCTA />
+        <Footer />
+      </div>
       <StickyCTA />
     </main>
   );
